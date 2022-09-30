@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37cde94b19.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-form">
+            <form action="/usuario">
+                <p id="optionSelection">Cadastra-se como:</p>
+                <div class="type-user-container">
+                    <div class="type-user-option">
+                        <label for="doador">Doador:</label>
+                        <input type="radio" name="type-user" id="doador" value="0">
+                    </div>
+                    <div class="type-user-option">
+                        <label for="instituicao">Instituicao:</label>
+                        <input type="radio" name="type-user" id="instituicao" value="1">
+                    </div>
+                </div>
+
+                <div class="option-doador option-all hiden-form">
+                    <div class="nome inputs">
+                        <label for="nameInst">Nome Completo:</label>
+                        <input type="text" id="nameInst" name="name">
+                    </div>
+                    <div class="email inputs">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="senha inputs">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha">
+                    </div>
+                    <div class="senha-confirm inputs">
+                        <label for="senha-confirm">Confirme a senha:</label>
+                        <input type="password" id="senha-confirm">
+                    </div>
+                    <div class="CPF inputs">
+                        <label for="CPF">CPF:</label>
+                        <input type="text" id="CPF">
+                    </div>
+                    <div class="telefoneCEP inputs">
+                        <div class="telefone inputs">
+                            <label for="telefone">Telefone (DDD + número):</label>
+                            <input type="text" id="telefone" name="telefone">
+                        </div>
+                        <div class="CEP inputs">
+                            <label for="CEPDoa">CEP:</label>
+                            <input type="text" id="CEPDoa" class="CEPInput" name="CEP">
+                        </div>
+                    </div>
+                    <div class="endereco inputs">
+                        <label for="endereco">Endereco:</label>
+                        <input type="text" id="endereco" name="endereco">
+                    </div>
+                    <div class="numeroComplemento inputs">
+                        <div class="numero inputs">
+                            <label for="numero">Numero:</label>
+                            <input type="text" id="numero" name="numero">
+                        </div>
+                        <div class="complemento inputs">
+                            <label for="complemento">Complemento:</label>
+                            <input type="text" id="complemento" name="complemento">
+                        </div>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </div>
+
+                <div class="option-instituicao option-all hiden-form">
+                    <div class="nome inputs">
+                        <label for="nameInst">Nome da Instituição:</label>
+                        <input type="text" id="nameInst" name="name">
+                    </div>
+                    <div class="email inputs">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="senha inputs">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha">
+                    </div>
+                    <div class="senha-confirm inputs">
+                        <label for="senha-confirm">Confirme a senha:</label>
+                        <input type="password" id="senha-confirm">
+                    </div>
+                    <div class="CNPJ inputs">
+                        <label for="CNPJ">CNPJ:</label>
+                        <input type="text" id="CNPJ">
+                    </div>
+                    <div class="telefoneCEP inputs">
+                        <div class="telefone inputs">
+                            <label for="telefone">Telefone (DDD + número):</label>
+                            <input type="text" id="telefone" name="telefone">
+                        </div>
+                        <div class="CEP inputs">
+                            <label for="CEPInst">CEP:</label>
+                            <input type="text" id="CEPInst" class="CEPInput" name="CEP">
+                        </div>
+                    </div>
+                    <div class="endereco inputs">
+                        <label for="endereco">Endereco:</label>
+                        <input type="text" id="endereco" name="endereco">
+                    </div>
+                    <div class="numeroComplemento inputs">
+                        <div class="numero inputs">
+                            <label for="numero">Numero:</label>
+                            <input type="text" id="numero" name="numero">
+                        </div>
+                        <div class="complemento inputs">
+                            <label for="complemento">Complemento:</label>
+                            <input type="text" id="complemento" name="complemento">
+                        </div>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script/cadastro.js"></script>
+</body>
+
+</html>
