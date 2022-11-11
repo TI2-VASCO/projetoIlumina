@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37cde94b19.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/instituicoesPage.css">
+    <title>InstituicaoPage</title>
+</head>
+
+<body>
+    <nav class="nav_fixed">
+        <i class="fa-solid fa-bars"></i>
+        <div class="navbar_left">
+            <h1 class="logo"><a href="/frontEnd/index.html">ILUMINA</a></h1>
+            <div class="nav_links nav_links_left">
+                <a href="/frontEnd/index.html">Home</a>
+                <a href="/frontEnd/sobre.html">Quem Somos</a>
+                <a href="/frontEnd/projetos.html">Projetos</a>
+                <a href="/frontEnd/instituicoes.html">Instituições</a>
+                <a href="#CONTATO">Contato</a>
+            </div>
+        </div>
+        <div class="nav_links navbar_right">
+            <a href="/frontEnd/login.html">Login</a>
+            <a href="/frontEnd/doacao.html" class="donate_link">Quero Doar</a>
+        </div>
+    </nav>
+
+    <h2 class="nome_Instituto">Instituicao Teste</h2>
+    <img class="imagem_instituo" src="" alt="">
+    <p class="descricao_instituo"></p>
+    <h3>Informações</h3>
+    <div class="info_instituto">
+        <p>Endereço: </p>
+        <p>Telefone: </p>
+        <p>Email: </p>
+    </div>
+    <h3>Projetos</h3>
+    <div class="containerProjetos"></div>
+
+    <script src="script/requisition.js"></script>
+    <script src="script/navBar.js"></script>
+    <script src="script/instituicoesPage.js"></script>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1%22%3E"></script>
+    <df-messenger intent="WELCOME" chat-title="NewAgent" agent-id="3746c821-aff8-4f31-a395-76f5b6377283"
+        language-code="pt-br"></df-messenger>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37cde94b19.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-form">
+            <h1 class="logo">ILUMINA</h1>
+            <p>Fazer Login</p>
+            <form class="login" action="http://localhost:6791/login" method="get">
+                <div class="inputs">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" id="password" placeholder="Senha" required>
+                </div>
+                <div class="type-user">
+                    <div class="options-user">
+                        <label for="option-1">Doador:</label>
+                        <input type="radio" name="type-user" id="option-1" value="0">
+                    </div>
+                    <div class="options-user">
+                        <label for="option-2">Instituição:</label>
+                        <input type="radio" name="type-user" value="1">
+                    </div>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p class="cadastro">Ainda não possui cadastro? <a href="/frontEnd/cadastro.html">Cadastre-se</a></p>
+        </div>
+    </div>
+    <script src="script/app.js"></script>
+    <script src="script/requisition.js"></script>
+</body>
+
+</html>

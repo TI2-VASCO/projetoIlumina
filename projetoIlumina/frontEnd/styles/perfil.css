@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav_fixed {
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.updateForm {
+    display: flex;
+    width: 80%;
+    margin: 0 auto 50px auto;
+    justify-content: center;
+}
+
+.option-doador {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 60%;
+}
+
+.inputs {
+    margin-bottom: 10px;
+}
+
+.inputs label {
+    display: block;
+}
+
+.inputs label {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.inputs input {
+    background-color: rgb(224, 224, 224);
+}
+
+.inputs input,
+.inputs textarea,
+button {
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+button {
+    width: 30%;
+
+    background-color: #3cb371;
+    border: #3cb371 1px solid;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 10px;
+    text-align: center;
+    color: rgb(62, 62, 62);
+}
+
+.container-form {
+    width: 100%;
+}
+
+.container-form h3:last-of-type {
+    margin-top: 100px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 10px auto 10px auto;
+    color: gray;
+}
+
+.menu {
+    margin: 30px 0 0 10px;
+    width: 30%;
+}
+
+.telefoneCEP {
+    display: flex;
+    justify-content: space-between;
+}
+
+.telefoneCEP div {
+    width: 45%;
+}
+
+.imagem img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+.imagem input {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+p {
+    width: 50%;
+    margin: 50px auto 0 auto;
+    font-size: 1.25rem;
+    color: gray;
+    text-align: center;
+}
+
+#deleteBtn {
+    display: block;
+    width: 10%;
+    margin: 20px auto 40px auto;
+    background-color: red;
+    border: none;
+}
+
+.doacoes {
+    width: 60%;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 1em;
+    margin: 0 auto 10px auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doacoesInfo {
+    margin: 0 10px;
+    width: fit-content;
+}
+
+#descricao {
+    padding: 0;
+    height: 200px;
+}
+
+.hiddenForm {
+    display: none;
+}
+
+
+.containerProjetos {
+    margin: 0 auto;
+    width: 60%;
+    padding: 50px 20px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #3cb371;
+    cursor: pointer;
+}
+
+.projetos img {
+    display: block;
+    width: 100%;
+    height: 60%;
+    border: 1px solid gray;
+}
+
+.projetos p {
+    margin-top: 5px;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.projetos p:last-of-type {
+    width: 80%;
+    font-size: 1rem;
+    margin: 30px auto;
+}
+
+.formProjeto {
+    margin: 30px 0;
+}
+
+.btnProjeto {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#descricaoForm {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.descricaoProjeto {
+    margin: 0 auto;
+    width: 400px;
+}

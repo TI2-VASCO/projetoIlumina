@@ -1,0 +1,341 @@
+.nav_fixed {
+    position: relative;
+    background-color: black;
+}
+
+.motivacao {
+    height: 45px;
+    background-color: #3cb371;
+    margin-top: 0px;
+}
+
+.motivacao h1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.objetivos {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    background-color: #3cb371;
+    height: 90vh;
+    box-shadow: 1px 1px 10px black;
+}
+
+.objetivos #title {
+    color: black;
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.obj1,
+.obj2 {
+    background-color: white;
+    height: 40vh;
+    margin-top: 150px;
+    margin-left: 80px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.obj1 p,
+.obj2 p {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.objFoto {
+    background-color: #3cb371;
+    width: 28vw;
+    height: 82vh;
+    margin-top: 25px;
+    margin-left: 80px;
+    border-radius: 10px;
+}
+
+.objFoto img {
+    height: 82vh;
+    width: 28vw;
+
+}
+
+.valoresTudo {
+    display: grid;
+    grid-template-columns: 42% 6% 54%;
+    margin-top: 150px;
+    background-color: rgba(60, 179, 113, 0.1);
+}
+
+.valMobile img {
+    display: none;
+}
+
+.valores {
+    background-color: #3cb371;
+    width: 15vw;
+    height: 70vh;
+    margin-top: 80px;
+    margin-left: 350px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.title img {
+    width: 100px;
+    margin-top: 20vh;
+    margin-left: 40px;
+}
+
+.title p {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+.valsTexto,
+.icons {
+    background-color: #D9D9D9;
+    width: 30vw;
+    height: 80vh;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px;
+}
+
+.icons img {
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.title2,
+.mais {
+    margin-left: 20px;
+}
+
+.title2 {
+    color: #3cb371;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.mais {
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.espaco {
+    margin-top: 0px;
+    height: 22vh;
+    background-color: #ecf4f4;
+}
+
+/*MOBILE*/
+@media ((min-width: 300px) and (max-width: 420px)) {
+    body {
+        background-color: #D9D9D9;
+    }
+
+    .poster_img {
+        width: 150vw;
+    }
+
+    .motivacao,
+    .objetivos,
+    .valoresTudo {
+        width: 150vw;
+        margin: 0;
+    }
+
+    .objFoto {
+        visibility: hidden;
+    }
+
+    .objetivos {
+        display: block;
+        height: 50vh;
+    }
+
+    .obj1,
+    .obj2 {
+        height: 20vh;
+        width: 70vw;
+        margin-left: 35vw;
+        margin-top: 0;
+    }
+
+    .obj1 p,
+    .obj2 p {
+        font-size: 18px;
+    }
+
+    .objetivos #title {
+        font-size: 20px;
+    }
+
+    .valsTexto {
+        width: 70vw;
+    }
+
+    .mais {
+        font-size: 18px;
+    }
+
+    .title2 {
+        font-size: 20px;
+    }
+
+    .valoresTudo {
+        background-color: #D9D9D9;
+        display: block;
+        height: 50vh;
+    }
+
+    .valores {
+        display: none;
+    }
+
+    #vals {
+        display: none;
+    }
+
+    .icons {
+        height: 0.5px;
+        width: 0.5px;
+    }
+
+    .valsTexto {
+        margin-left: 150px;
+        box-shadow: none;
+    }
+
+    .valores img {
+        visibility: hidden;
+    }
+
+    .valMobile img {
+        display: flex;
+    }
+
+    .espaco {
+        visibility: hidden;
+    }
+
+    footer {
+        width: 150vw;
+    }
+}
+
+@media ((min-width: 421px) and (max-width: 500px)) {
+    body {
+        width: 150vw;
+    }
+
+    .obj1 {
+        margin-left: 5px;
+    }
+
+    .obj2 {
+        margin-left: 130px;
+    }
+
+    .objFoto {
+        display: none;
+    }
+
+    .obj1,
+    .obj2 {
+        margin-top: 120px;
+        width: 70vw;
+    }
+
+    .valores {
+        display: none;
+    }
+
+    .mais {
+        font-size: 15px;
+    }
+
+    .valsTexto {
+        width: 80vw;
+        height: 50vh;
+        margin-left: -80px;
+    }
+
+    .icons {
+        margin-left: 100px;
+        width: 20vw;
+        height: 50vh;
+    }
+
+}
+
+@media ((min-width: 501px) and (max-width: 1039px)) {
+    body {
+        width: 150vw;
+    }
+
+    .obj1,
+    .obj2 {
+        width: 50vw;
+        font-size: 20px;
+    }
+
+    .objFoto {
+        display: none;
+    }
+
+    .obj1 {
+        margin-left: 90px;
+    }
+
+    .obj2 {
+        margin-left: 210px;
+    }
+
+    .valores {
+        display: none;
+    }
+
+    .valsTexto {
+        width: 80vw;
+        height: 50vh;
+        margin-left: -100px;
+    }
+
+    .icons {
+        margin-left: 140px;
+        width: 15vw;
+        height: 50vh;
+    }
+}
+
+@media ((min-width: 1900px) and (max-width: 2000px)) {
+
+    .obj1 p,
+    .obj2 p {
+        margin-top: 60px;
+        line-height: 25px;
+    }
+
+    .title img {
+        margin-left: 90px;
+    }
+
+    .title2 {
+        margin-top: 100px;
+    }
+
+    .icons img {
+        margin-top: 95px;
+    }
+}

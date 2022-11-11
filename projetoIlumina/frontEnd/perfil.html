@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37cde94b19.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/perfil.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav_fixed">
+        <i class="fa-solid fa-bars"></i>
+        <div class="navbar_left">
+            <h1 class="logo"><a href="/frontEnd/index.html">ILUMINA</a></h1>
+            <div class="nav_links nav_links_left">
+                <a href="/frontEnd/index.html">Home</a>
+                <a href="/frontEnd/sobre.html">Quem Somos</a>
+                <a href="/frontEnd/projetos.html">Projetos</a>
+                <a href="/frontEnd/instituicoes.html">Instituições</a>
+                <a href="#CONTATO">Contato</a>
+            </div>
+        </div>
+        <div class="nav_links navbar_right">
+            <a href="/frontEnd/login.html">Login</a>
+            <a href="/frontEnd/doacao.html" class="donate_link">Quero Doar</a>
+        </div>
+    </nav>
+
+    <h2>PERFIL</h2>
+
+    <div class="container">
+        <div class="container-form form-doador hiddenForm">
+            <h3>Informações Pessoais</h3>
+            <form class="updateForm" id="formDoador" action="http://localhost:6791/update/" method="post">
+                <div class="option-doador option-all">
+                    <div class="imagem">
+                        <img src="#" alt="" id="displayImg">
+                        <input type="file" id="img" name="img" accept="image/*">
+                    </div>
+                    <div class="nome inputs">
+                        <label for="nameInst">Nome Completo:</label>
+                        <input type="text" id="nameInst" name="name" readonly>
+                    </div>
+                    <div class="email inputs">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" readonly>
+                    </div>
+                    <div class="senha inputs">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" readonly>
+                    </div>
+                    <div class="CPF inputs">
+                        <label for="CPF">CPF:</label>
+                        <input type="text" id="CPF" name="CPF" placeholder="___.___.___-__" readonly>
+                    </div>
+                    <div class="telefoneCEP inputs">
+                        <div class="telefone inputs">
+                            <label for="telefone">Telefone:</label>
+                            <input type="text" id="telefone" name="telefone" placeholder="(xx)xxxxxxxxx" readonly>
+                        </div>
+                        <div class="CEP inputs">
+                            <label for="CEPDoa">CEP:</label>
+                            <input type="text" id="CEPDoa" class="CEPInput" name="CEP" placeholder="_____-___" readonly>
+                        </div>
+                    </div>
+                    <div class="endereco inputs">
+                        <label for="endereco">Endereco:</label>
+                        <input type="text" id="endereco" name="endereco" readonly>
+                    </div>
+                    <button class="btnEditar" type="submit">Editar</button>
+                </div>
+            </form>
+            <h3>Doações</h3>
+            <div class="container-doacoes">
+
+            </div>
+            <h3>Deletar Conta</h3>
+            <form id="deleteForm" action="http://localhost:6791/delete/">
+                <p>Tem certeza que deseja deletar sua conta ?</p>
+                <button id="deleteBtn" type="submit">Excluir</button>
+            </form>
+        </div>
+
+
+
+        <div class="container-form form-instituicoes hiddenForm">
+            <h3>Informações da Conta</h3>
+            <form class="updateForm" id="formInstituicao" action="http://localhost:6791/update/" method="post">
+                <div class="option-doador option-all">
+                    <div class="imagem">
+                        <img src="#" alt="" id="displayImg">
+                        <input type="file" id="img" name="img" accept="image/*">
+                    </div>
+                    <div class="nome inputs">
+                        <label for="nameInst">Nome Completo:</label>
+                        <input type="text" id="nameInst" name="name" readonly>
+                    </div>
+                    <div class="email inputs">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" readonly>
+                    </div>
+                    <div class="senha inputs">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" readonly>
+                    </div>
+                    <div class="CNPJ inputs">
+                        <label for="CNPJ">CNPJ:</label>
+                        <input type="text" id="CNPJ" name="CNPJ" placeholder="___.___.___-__" readonly>
+                    </div>
+                    <div class="telefoneCEP inputs">
+                        <div class="telefone inputs">
+                            <label for="telefone">Telefone:</label>
+                            <input type="text" id="telefone" name="telefone" placeholder="(xx)xxxxxxxxx" readonly>
+                        </div>
+                        <div class="CEP inputs">
+                            <label for="CEPDoa">CEP:</label>
+                            <input type="text" id="CEPDoa" class="CEPInput" name="CEP" placeholder="_____-___" readonly>
+                        </div>
+                    </div>
+                    <div class="endereco inputs">
+                        <label for="endereco">Endereco:</label>
+                        <input type="text" id="endereco" name="endereco" readonly>
+                    </div>
+                    <div class="descricao inputs">
+                        <label for="descricao">Descricao:</label>
+                        <input type="text" id="descricao" name="descricao" readonly>
+                    </div>
+
+                    <button class="btnEditar" type="submit">Editar</button>
+                </div>
+            </form>
+            <h3>Projetos</h3>
+            <div class="containerProjetos"></div>
+            <button class="btnProjeto" form="form_projeto" type="submit">Criar Projeto</button>
+
+            <form action="http://localhost:6791/projeto/add/" id="form_projeto" class="formProjeto hiddenForm">
+                <div class="imagem">
+                    <img src="#" alt="" id="displayImg">
+                    <input type="file" id="img" name="img" accept="image/*">
+                </div>
+                <div class="descricaoProjeto inputs">
+                    <label for="descricao">Descricao:</label>
+                    <input type="text" id="descricaoProjeto" name="descricao">
+                </div>
+            </form>
+            <h3>Deletar Conta</h3>
+            <form id="deleteForm" action="http://localhost:6791/delete/">
+                <p>Tem certeza que deseja deletar sua conta ?</p>
+                <button id="deleteBtn" type="submit">Excluir</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="script/navBar.js"></script>
+    <script src="script/requisition.js"></script>
+    <script src="script/perfil.js"></script>
+</body>
+
+</html>
